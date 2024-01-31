@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "Logging",
     platforms: [
-           .iOS(.v17), // Limit the deployment of this package to iOS 17 and above, this is needed because SystemLogger makes use of the Apple SOLog framework containing the Logger implementation
+           .iOS(.v17),
+           .macOS(.v10_15) // Limit the deployment of this package to iOS 17 and above, this is needed because SystemLogger makes use of the Apple SOLog framework containing the Logger implementation
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
