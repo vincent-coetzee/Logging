@@ -12,7 +12,7 @@
 import Foundation
 import OSLog
 
-@available(macOS,introduced: 11.0)
+@available(macOS 11.0, *)
 public class SystemLogger
     {
     //
